@@ -11,7 +11,7 @@ $routes = Services::routes();
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('HomeController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -29,7 +29,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', ['App'] , ['filter' => 'is_login']);
+$routes->get('/short/(:segment)', 'HomeController::index');
+$routes->get('/', 'Frontend\AuthController::login', ['filter' => 'is_login']);
 $routes->post('/login', 'Frontend\AuthController::postLogin');
 $routes->get('/logout', 'Frontend\AuthController::logout');
 $routes->get('/register', 'Frontend\AuthController::register');
@@ -37,6 +38,8 @@ $routes->post('/register', 'Frontend\AuthController::postRegister');
 
 $routes->group('', ['filter' => 'auth'], static function ($routes) {
     $routes->resource('manage-url' , ['controller' => 'Backend\ManageUrlController']);
+    $routes->get('qrcode/(:segment)', 'Backend\ManageUrlController::generateQrCode');
+    $routes->post('manage-url/switch-status' , 'Backend\ManageUrlController::switchStatus');
 });
 /*
  * --------------------------------------------------------------------

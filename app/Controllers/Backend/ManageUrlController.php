@@ -4,6 +4,9 @@ namespace App\Controllers\Backend;
 
 use App\Controllers\BaseController;
 use App\Models\Url;
+use App\Models\UrlClick;
+use BaconQrCode\Renderer\Image\Png;
+use BaconQrCode\Writer;
 
 class ManageUrlController extends BaseController
 {
@@ -28,7 +31,7 @@ class ManageUrlController extends BaseController
         // var_dump(base_url() . '/' . $shorten_url);die();
         $data = [
             'url' => $this->request->getPost('url'),
-            'short_url' => base_url() . $shorten_url,
+            'short_url' => base_url() . 'short/' . $shorten_url,
             'code' => $shorten_url,
             'user_id' => $this->request->getPost('user_id') ?? session()->get('auth')['id'],
             'created_at' => date('Y-m-d H:i:s')
@@ -59,26 +62,18 @@ class ManageUrlController extends BaseController
     public function update($id)
     {
         $url = new Url();
-        $url = $url->where('id', $id)->first();
-        var_dump($url);die();
         $this->validate([
-            'origin_url' => 'required|valid_url',
-            'shorten_url' => 'required|valid_url',
-            'code' => 'required',
-            'clicks' => 'required',
+            'url' => 'required|valid_url',
             'status' => 'required',
         ]);
         $data = [
-            'origin_url' => $this->request->getPost('origin_url'),
-            'shorten_url' => $this->request->getPost('shorten_url'),
-            'code' => $this->request->getPost('code'),
-            'clicks' => $this->request->getPost('clicks'),
-            'status' => $this->request->getPost('status'),
+            'url' => $this->request->getPost('url'),
+            'status' => $this->request->getPost('status') ? 1 : 0,
             'updated_at' => date('Y-m-d H:i:s')
         ];
         try{
             $url->db->transStart();
-            $result = $url->updateRecordWithTransaction($id, $data);
+            $result = $url->where('code' , $id)->set($data)->update();
             if($result){
                 $url->db->transCommit();
                 return redirect()->to(base_url('manage-url'))->with('success', 'Url updated successfully');
@@ -93,20 +88,22 @@ class ManageUrlController extends BaseController
 
     public function delete($id)
     {
-        var_dump($id);die();
         $url = new Url();
+        $urlclick = new UrlClick();
         try{
             $url->db->transStart();
-            $result = $url->deleteRecordWithTransaction($id);
+            $urlData = $url->where('code', $id)->first();
+            $result = $url->where('code',$id)->delete();
             if($result){
+                $urlclick->where('url_id', $urlData['id'])->delete();
                 $url->db->transCommit();
-                return redirect()->to(base_url('manage-url'))->with('success', 'Url deleted successfully');
+                return response()->setJSON(['status' => true, 'msg' => 'Url ' . $id . ' deleted successfully']);
             }
-            return redirect()->to(base_url('manage-url'))->with('error', 'Url failed to delete');
+            return response()->setJSON(['status' => false, 'msg' => 'Url ' . $id . ' failed to delete']);
         } catch (\Exception $e) {
             $url->db->transRollback();
             $this->logger->log('error', $e->getMessage());
-            return redirect()->to(base_url('manage-url'))->with('error', $e->getMessage());
+            return response()->setJSON(['status' => false, 'msg' => $e->getMessage()]);
         }
     }
 
@@ -120,5 +117,45 @@ class ManageUrlController extends BaseController
         }
 
         return $result;
+    }
+    
+    public function switchStatus(){
+        $url = new Url();
+        $id = $this->request->getPost('code');
+        $status = $this->request->getPost('status');
+        $data = [
+            'status' => $status,
+            'updated_at' => date('Y-m-d H:i:s')
+        ];
+        try{
+            $url->db->transStart();
+            $result = $url->where('code', $id)->set($data)->update();
+            if($result){
+                $url->db->transCommit();
+                return response()->setJSON(['status' => true, 'msg' => 'Url ' . $id . ' updated successfully']);
+            }
+            return response()->setJSON(['status' => false, 'msg' => 'Url ' . $id . ' failed to update']);
+        } catch (\Exception $e) {
+            $url->db->transRollback();
+            $this->logger->log('error', $e->getMessage());
+            return response()->setJSON(['status' => false, 'msg' => $e->getMessage()]);
+        }
+    }
+
+    public function generateQrCode(){
+         // Create a new QRCode writer
+         $writer = new Writer(new Png());
+
+         // Set QR code options (e.g., size, color, etc.)
+         $writer->setSize(300);
+ 
+         // Generate the QR code image as a string
+         $qrCodeData = $writer->writeString('555');
+ 
+         // Set the response content type to image/png
+         $this->response->setContentType('image/png');
+ 
+         // Output the QR code image
+         echo $qrCodeData;
     }
 }

@@ -19,6 +19,7 @@ class Url extends Model
         'code',
         'clicks',
         'user_id',
+        'status',
         'created_at',
         'updated_at',
         'deleted_at'

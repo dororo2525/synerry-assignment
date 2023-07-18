@@ -7,13 +7,21 @@ use CodeIgniter\Model;
 class UrlClick extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'urlclicks';
+    protected $table            = 'url_clicks';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = [
+        'shorten_url_id',
+        'platform',
+        'browser',
+        'device',
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
 
     // Dates
     protected $useTimestamps = false;

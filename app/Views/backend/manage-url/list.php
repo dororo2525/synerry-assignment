@@ -4,7 +4,8 @@
 <link rel="stylesheet" href="<?= base_url('assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') ?>">
 <link rel="stylesheet" href="<?= base_url('assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') ?>">
-<script src="<?= base_url('assets/plugins/sweetalert2/sweetalert2.min.css') ?>"></script>
+<link rel="stylesheet" href="<?= base_url('assets/plugins/sweetalert2/sweetalert2.min.css') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/plugins/toastr/toastr.min.css') ?>">
 <?= $this->endSection() ?>
 
 <?= $this->section('content-header') ?>
@@ -37,10 +38,7 @@
             <!-- /.card-header -->
             <div class="card-body">
                 <?php
-
-use App\Controllers\Backend\ManageUrlController;
-
- if (session()->getFlashdata('success')) : ?>
+                if (session()->getFlashdata('success')) : ?>
                     <div class="alert alert-success alert-dismissible">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                         <?= session()->getFlashdata('success') ?>
@@ -66,18 +64,29 @@ use App\Controllers\Backend\ManageUrlController;
                     <tbody>
                         <?php foreach ($urls as $url) : ?>
                             <tr>
-                                <td><?= $url['url'] ?></td>
-                                <td><?= $url['short_url'] ?></td>
+                                <td><a href="<?= $url['url'] ?>"><?= $url['url'] ?></a></td>
+                                <td><a href="<?= $url['short_url'] ?>"><?= $url['short_url'] ?></a></td>
                                 <td><?= $url['code'] ?></td>
-                                <td><?= $url['clicks'] ?></td>
-                                <td><?= $url['status'] ?></td>
+                                <td><?= $url['clicks'] ?> <div id="qrcode"></div></td>
+                                <td class="text-center">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input switch-status" id="customSwitch<?= $url['id'] ?>" data-code="<?= $url['code'] ?>" <?= $url['status'] == 1 ? 'checked' : null ?>>
+                                        <label class="custom-control-label" for="customSwitch<?= $url['id'] ?>"></label>
+                                    </div>
+                                </td>
                                 <td>
-                                    <a href="<?= route_to('App\Controllers\Backend\ManageUrlController::edit', $url['code']) ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
-                                    <form action="<?= route_to('App\Controllers\Backend\ManageUrlController::delete', $url['id']) ?>" method="POST" style="display: inline-block;">
-                                        <?= csrf_field() ?>
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-                                    </form>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-bars"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <!-- Dropdown menu items -->
+                                            <a class="dropdown-item" href="<?= route_to('App\Controllers\Backend\ManageUrlController::edit', $url['code']) ?>">Edit</a>
+                                            <a class="dropdown-item btn-delete" data-code="<?= $url['code'] ?>" href="javascript:void(0)">Delete</a>
+                                            <a class="dropdown-item" href="#">Download qr code</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -141,6 +150,8 @@ use App\Controllers\Backend\ManageUrlController;
 <script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.print.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/datatables-buttons/js/buttons.colVis.min.js') ?>"></script>
 <script src="<?= base_url('assets/plugins/sweetalert2/sweetalert2.min.js') ?>"></script>
+<script src="<?= base_url('assets/plugins/toastr/toastr.min.js') ?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     $(function() {
         $("#example1").DataTable({
@@ -150,37 +161,16 @@ use App\Controllers\Backend\ManageUrlController;
             "buttons": [{
                     text: '<i class="fas fa-plus-circle"></i>',
                     attr: {
-                        class: 'btn btn-primary',
+                        class: 'btn btn-light',
                         'data-toggle': "modal",
                         'data-target': "#modal-default"
-                    }
-                },
-                {
-                    extend: 'excel',
-                    text: '<i class="fas fa-file-excel"></i>',
-                    attr: {
-                        class: 'btn btn-primary'
-                    }
-                },
-                {
-                    extend: 'pdf',
-                    text: '<i class="fas fa-file-pdf"></i>',
-                    attr: {
-                        class: 'btn btn-primary'
-                    }
-                },
-                {
-                    extend: 'print',
-                    text: '<i class="fas fa-print"></i>',
-                    attr: {
-                        class: 'btn btn-primary'
                     }
                 },
                 {
                     extend: 'colvis',
                     text: '<i class="fas fa-eye"></i>',
                     attr: {
-                        class: 'btn btn-primary'
+                        class: 'btn btn-light'
                     }
                 },
             ]
@@ -196,6 +186,82 @@ use App\Controllers\Backend\ManageUrlController;
 
         $('#modal-default').on('hidden.bs.modal', function() {
             $('#url').val('')
+        });
+
+        $('.btn-delete').click(function() {
+            swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    var code = $(this).data('code');
+                    $.ajax({
+                        url: "<?= route_to('App\Controllers\Backend\ManageUrlController::delete' , '') ?>" + code,
+                        type: "POST",
+                        data: {
+                            code: code,
+                            _method: "DELETE",
+                            _token: "<?= csrf_hash() ?>"
+                        },
+                        dataType: "JSON",
+                        success: function(response) {
+                            console.log(response);
+                            if (response.status == true) {
+                                toastr.options = {
+                                    "progressBar": true,
+                                    "timeOut": "1500",
+                                }
+                                toastr.success(response.msg);
+                                setTimeout(function() {
+                                    window.location.reload();
+                                }, 1500);
+                            } else {
+                                toastr.options = {
+                                    "progressBar": true,
+                                    "timeOut": "1500",
+                                }
+                                toastr.error(response.msg);
+                            }
+                        },
+                    });
+                }
+            })
+        });
+
+        $('.switch-status').click(function() {
+            var code = $(this).data('code');
+            var status = Number($(this).is(':checked'));
+            $.ajax({
+                url: "<?= route_to('App\Controllers\Backend\ManageUrlController::switchStatus') ?>",
+                type: "POST",
+                data: {
+                    code: code,
+                    status: status,
+                    _token: "<?= csrf_hash() ?>"
+                },
+                dataType: "JSON",
+                success: function(response) {
+                    if (response.status == true) {
+                        toastr.options = {
+                            "progressBar": true,
+                            "timeOut": "1500",
+                        }
+                        toastr.success(response.msg);
+
+                    } else {
+                        toastr.options = {
+                            "progressBar": true,
+                            "timeOut": "1500",
+                        }
+                        toastr.error(response.msg);
+                    }
+                },
+            });
+            $(this).blur();
         });
     });
 </script>
