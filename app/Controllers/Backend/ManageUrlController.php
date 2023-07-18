@@ -3,10 +3,9 @@
 namespace App\Controllers\Backend;
 
 use App\Controllers\BaseController;
+use App\Models\User;
 use App\Models\Url;
 use App\Models\UrlClick;
-use BaconQrCode\Renderer\Image\Png;
-use BaconQrCode\Writer;
 
 class ManageUrlController extends BaseController
 {
@@ -105,6 +104,29 @@ class ManageUrlController extends BaseController
             $this->logger->log('error', $e->getMessage());
             return response()->setJSON(['status' => false, 'msg' => $e->getMessage()]);
         }
+    }
+
+    public function report(){
+        $code = $this->request->uri->getSegment(2);
+        $urls = new Url();
+        $url = $urls->where('code', $code)->first();
+        return view('backend/manage-url/report' , compact('url'));
+        // var_dump($url->countClicksByMonthRange('2023-05-01' , '2023-07-31')); die();
+    }
+
+    public function getReportByCurrentYear(){
+        $code = $this->request->getPost('code');
+        $urls = new Url();
+        $url = $urls->countClicksByCurrentYear($code);
+        return response()->setJSON(['status' => true, 'data' => $url]);
+    }
+
+    public function getReportByDateRange(){
+        $startDate = $this->request->getPost('startDate');
+        $endDate = $this->request->getPost('endDate');
+        $urls = new Url();
+        $url = $urls->countClicksByMonthRange($startDate , $endDate);
+        return response()->setJSON(['status' => true, 'data' => $url]);
     }
 
     public function ShortUrl(){

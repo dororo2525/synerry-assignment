@@ -38,4 +38,8 @@ class User extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function url(){
+        return $this->hasMany('App\Models\Url', 'user_id', 'id');
+    }
 }

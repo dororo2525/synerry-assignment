@@ -26,6 +26,8 @@
   <!-- summernote -->
   <link rel="stylesheet" href="<?= base_url('assets/plugins/summernote/summernote-bs4.min.css');?>">
 
+  <link rel="stylesheet" href="<?= base_url('assets/css/style.css');?>">
+
   <?= $this->renderSection('css') ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -122,7 +124,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Synerry assignment.</strong>
+    <strong>Synerry assignment powered by AdminLTE</strong>
   </footer>
 
   <!-- Control Sidebar -->

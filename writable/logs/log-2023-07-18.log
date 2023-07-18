@@ -1226,3 +1226,1597 @@ INFO - 2023-07-18 15:47:59 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-07-18 15:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-18 15:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-18 15:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 16:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:29:03 --> Attempt to read property "user" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "user" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:29:11 --> Call to a member function user() on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:31:06 --> Attempt to read property "user" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "user" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:31:42 --> Attempt to read property "user" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "user" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:32:43 --> Attempt to read property "clicks" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "clicks" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:32:56 --> Undefined array key "user"
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:33:43 --> Undefined array key "clicks"
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "clicks"', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:34:44 --> Undefined array key "user"
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:34:53 --> Attempt to read property "user" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "user" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:37:34 --> Attempt to read property "urlclick" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "urlclick" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:37:42 --> Attempt to read property "users" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "users" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:37:54 --> Call to a member function user() on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:43:06 --> Call to a member function click() on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:43:36 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:43:46 --> Attempt to read property "id" on string
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 114.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on string', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:45:54 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Url given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 154.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(154): mysqli_result->fetch_object('App\\Entities\\Url')
+ 2 SYSTEMPATH\Database\BaseResult.php(159): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Url')
+ 3 SYSTEMPATH\Database\BaseResult.php(114): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Url')
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Url')
+ 5 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Backend\ManageUrlController.php(113): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:55:20 --> Call to undefined method App\Models\Url::all
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(113): CodeIgniter\Model->__call('all', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:59:05 --> Class "App\Controllers\Backend\User" not found
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 17:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 17:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 17:59:57 --> Attempt to read property "url" on array
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 117.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "url" on array', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 18:00:09 --> Undefined array key "url"
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 117.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 18:00:39 --> Undefined array key "url"
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 117.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'D:\\Git\\synerry\\app\\Controllers\\Backend\\ManageUrlController.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 18:02:19 --> Call to undefined method App\Models\Url::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 18:02:35 --> Object of type App\Models\Url is not callable
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 18:04:05 --> Object of type App\Models\Url is not callable
+in APPPATH\Controllers\Backend\ManageUrlController.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 18:04:15 --> Call to undefined method App\Models\Url::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 18:05:27 --> mysqli_sql_exception: Unknown column 'url.code' in 'where clause' in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\BaseModel->findAll()
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 18:05:27 --> Unknown column 'url.code' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`
+WHERE `url`.`code` = \'10fw\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`
+WHERE `url`.`code` = \'10fw\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`
+WHERE `url`.`code` = \'10fw\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`
+WHERE `url`.`code` = :url.code:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 18:05:41 --> mysqli_sql_exception: Unknown column 'url_click.url_id' in 'on clause' in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\BaseModel->findAll()
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 18:05:41 --> Unknown column 'url_click.url_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `url`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 18:05:59 --> mysqli_sql_exception: Unknown column 'url_click.url_id' in 'on clause' in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\BaseModel->findAll()
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 18:05:59 --> Unknown column 'url_click.url_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `urls`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `urls`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `urls`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `shorten_urls`
+JOIN `url_clicks` ON `url_click`.`url_id` = `urls`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(115): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 18:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 18:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 18:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:03:51 --> Call to a member function format() on string
+in APPPATH\Models\Url.php on line 58.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(117): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:07:37 --> Call to undefined method App\Models\Url::urlClicks
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(62): CodeIgniter\Model->__call('urlClicks', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:09:06 --> Call to undefined method App\Models\Url::urlClicks
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(62): CodeIgniter\Model->__call('urlClicks', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:10:22 --> Call to a member function modify() on string
+in APPPATH\Models\Url.php on line 71.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:18:11 --> Call to undefined method App\Models\UrlClick::whereYear
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(59): CodeIgniter\Model->__call('whereYear', [...])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:21:10 --> DateTime::createFromFormat(): Argument #2 ($datetime) must be of type string, DateTime given
+in APPPATH\Models\Url.php on line 62.
+ 1 APPPATH\Models\Url.php(62): DateTime::createFromFormat('Y-m-d', Object(DateTime))
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', Object(DateTime))
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:22:41 --> DateTime::createFromFormat(): Argument #2 ($datetime) must be of type string, DateTime given
+in APPPATH\Models\Url.php on line 63.
+ 1 APPPATH\Models\Url.php(63): DateTime::createFromFormat('Y-m-d', Object(DateTime))
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', Object(DateTime))
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:26:48 --> Class "Time" not found
+in APPPATH\Models\Url.php on line 56.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:27:46 --> Class "Carbon\Carbon" not found
+in APPPATH\Models\Url.php on line 56.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:29:22 --> Undefined variable $startDateTime
+in APPPATH\Models\Url.php on line 56.
+ 1 APPPATH\Models\Url.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDateTime', 'D:\\Git\\synerry\\app\\Models\\Url.php', 56)
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:32:03 --> Call to undefined method App\Models\UrlClick::whereYear
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(57): CodeIgniter\Model->__call('whereYear', [...])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 19:32:30 --> Call to undefined method App\Models\UrlClick::whereYear
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(57): CodeIgniter\Model->__call('whereYear', [...])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(115): App\Models\Url->countClicksByMonthRange('2023-05-01', '2023-07-18')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 19:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 19:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 21:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:04:30 --> Undefined variable $url
+in APPPATH\Views\backend\manage-url\report.php on line 221.
+ 1 APPPATH\Views\backend\manage-url\report.php(221): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $url', 'D:\\Git\\synerry\\app\\Views\\backend\\manage-url\\report.php', 221)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Git\\synerry\\app\\Views\\backend\\manage-url\\report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('backend/manage-url/report', [], true)
+ 5 APPPATH\Controllers\Backend\ManageUrlController.php(114): view('backend/manage-url/report')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:11:34 --> Cannot use object of type mysqli as array
+in APPPATH\Models\Url.php on line 64.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('10fw')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:26:20 --> Undefined array key "id"
+in APPPATH\Models\Url.php on line 64.
+ 1 APPPATH\Models\Url.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\Git\\synerry\\app\\Models\\Url.php', 64)
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:27:41 --> Undefined variable $key
+in APPPATH\Models\Url.php on line 69.
+ 1 APPPATH\Models\Url.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'D:\\Git\\synerry\\app\\Models\\Url.php', 69)
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:28:39 --> Call to undefined method App\Models\UrlClick::count
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('count', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:28:51 --> Call to undefined method App\Models\UrlClick::count
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('count', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:29:27 --> Call to undefined method App\Models\UrlClick::count
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('count', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:30:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'
+ LIMIT 1' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\BaseModel->first()
+#7 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#10 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#13 {main}
+CRITICAL - 2023-07-18 22:30:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = :shorten_url_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Url.php(63): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:31:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\Model->__call('get', Array)
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 22:31:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = :shorten_url_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:31:33 --> Call to undefined method App\Models\UrlClick::count
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('count', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:33:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\Model->__call('get', Array)
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 22:33:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = :shorten_url_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:35:10 --> Call to undefined method App\Models\UrlClick::count
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('count', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:36:24 --> Call to undefined method App\Models\UrlClick::countAllResult
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('countAllResult', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:36:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 22:36:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = :shorten_url_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:37:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 22:37:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = :shorten_url_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:38:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 22:38:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:39:47 --> Call to undefined method App\Models\UrlClick::whereBetween
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('whereBetween', [...])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:40:35 --> Call to undefined method App\Models\UrlClick::whereBetween
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('whereBetween', [...])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:41:12 --> Call to undefined method App\Models\UrlClick::count
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(63): CodeIgniter\Model->__call('count', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:41:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\BaseModel->findAll()
+#7 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#10 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#13 {main}
+CRITICAL - 2023-07-18 22:41:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+AND `shorten_url_id` = :shorten_url_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Url.php(63): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:42:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\BaseModel->findAll()
+#7 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#10 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#13 {main}
+CRITICAL - 2023-07-18 22:42:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+AND `shorten_url_id` = '5'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN " . $currentDate->year . " AND "1
+AND `shorten_url_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN " . $currentDate->year . " AND "1
+AND `shorten_url_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN " . $currentDate->year . " AND "1
+AND `shorten_url_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN " . $currentDate->year . " AND "1
+AND `shorten_url_id` = :shorten_url_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Url.php(63): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:44:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00:00:00 AND 2023-01-01 00:00:00
+AND `shorten_url_id` = '5'' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 D:\Git\synerry\app\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 22:44:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '00:00:00 AND 2023-01-01 00:00:00
+AND `shorten_url_id` = '5'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN 2023-01-01 00:00:00 AND 2023-01-01 00:00:00
+AND `shorten_url_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN 2023-01-01 00:00:00 AND 2023-01-01 00:00:00
+AND `shorten_url_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN 2023-01-01 00:00:00 AND 2023-01-01 00:00:00
+AND `shorten_url_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `url_clicks`
+WHERE `created_at` BETWEEN 2023-01-01 00:00:00 AND 2023-01-01 00:00:00
+AND `shorten_url_id` = :shorten_url_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Models\Url.php(63): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 22:55:20 --> Call to undefined method App\Models\UrlClick::count
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(70): CodeIgniter\Model->__call('count', [])
+ 2 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 22:55:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"01'
+AND `shorten_url_id` = '5'
+ LIMIT 1' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\Git\synerry\app\Models\Url.php(70): CodeIgniter\BaseModel->first()
+#7 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#10 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#13 {main}
+CRITICAL - 2023-07-18 22:55:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"01'
+AND `shorten_url_id` = '5'
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "01\'
+AND `shorten_url_id` = \'5\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "01\'
+AND `shorten_url_id` = \'5\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "01\'
+AND `shorten_url_id` = \'5\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "01\'
+AND `shorten_url_id` = :shorten_url_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Url.php(70): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 22:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 22:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:12:40 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:15:18 --> Method nextMonth does not exist.
+in VENDORPATH\nesbot\carbon\src\Carbon\Traits\Date.php on line 2737.
+ 1 VENDORPATH\nesbot\carbon\src\Carbon\Traits\Mixin.php(201): Carbon\Carbon->Carbon\Traits\{closure}()
+ 2 VENDORPATH\nesbot\carbon\src\Carbon\Traits\Date.php(2744): Carbon\Carbon::bindMacroContext(Object(Carbon\Carbon), Object(Closure))
+ 3 APPPATH\Models\Url.php(75): Carbon\Carbon->__call('nextMonth', [])
+ 4 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:19:21 --> Failed to parse time string (18/07/2023) at position 0 (1): Unexpected character
+in VENDORPATH\nesbot\carbon\src\Carbon\Traits\Creator.php on line 88.
+ 1 VENDORPATH\nesbot\carbon\src\Carbon\Traits\Creator.php(88): DateTime->__construct('18/07/2023', Object(Carbon\CarbonTimeZone))
+ 2 VENDORPATH\nesbot\carbon\src\Carbon\Traits\Creator.php(186): Carbon\Carbon->__construct('18/07/2023', null)
+ 3 VENDORPATH\nesbot\carbon\src\Carbon\Traits\Creator.php(223): Carbon\Carbon::rawParse('18/07/2023', null)
+ 4 APPPATH\Models\Url.php(56): Carbon\Carbon::parse('18/07/2023')
+ 5 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:22:23 --> Call to undefined method App\Models\Url::hasMany
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(93): CodeIgniter\Model->__call('hasMany', [...])
+ 2 APPPATH\Models\Url.php(61): App\Models\Url->clicks()
+ 3 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:22:31 --> Call to undefined method App\Models\Url::hasMany
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Models\Url.php(93): CodeIgniter\Model->__call('hasMany', [...])
+ 2 APPPATH\Models\Url.php(61): App\Models\Url->clicks()
+ 3 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 23:22:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+ LIMIT 1' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\Git\synerry\app\Models\Url.php(61): CodeIgniter\BaseModel->first()
+#7 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#10 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#13 {main}
+CRITICAL - 2023-07-18 23:22:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Url.php(61): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-18 23:23:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1' at line 3 in D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Git\synerry\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Git\synerry\vendor\codeigniter4\framework\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Git\synerry\app\Models\Url.php(61): CodeIgniter\Model->__call('get', Array)
+#6 D:\Git\synerry\app\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+#7 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+#8 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+#9 D:\Git\synerry\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Git\synerry\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Git\synerry\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\...')
+#12 {main}
+CRITICAL - 2023-07-18 23:23:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `url_clicks`
+WHERE `created_at` BETWEEN "2023" AND "1', [], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\Url.php(61): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:25:40 --> syntax error, unexpected token "public"
+in APPPATH\Models\Url.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Git\\synerry\\app\\Models\\Url.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Url')
+ 3 APPPATH\Controllers\Backend\ManageUrlController.php(111): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Url')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->report()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:31:36 --> Call to undefined method CodeIgniter\I18n\Time::lessThanOrEqualTo()
+in APPPATH\Models\Url.php on line 66.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:33:23 --> Call to undefined method CodeIgniter\I18n\Time::lessThanOrEqualTo()
+in APPPATH\Models\Url.php on line 66.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:33:43 --> Call to undefined method CodeIgniter\I18n\Time::lessThanOrEqualTo()
+in APPPATH\Models\Url.php on line 66.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:34:03 --> Call to undefined method CodeIgniter\I18n\Time::lessThanOrEqualTo()
+in APPPATH\Models\Url.php on line 66.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:35:44 --> Call to undefined method CodeIgniter\I18n\Time::lessThanOrEqualTo()
+in APPPATH\Models\Url.php on line 67.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:36:42 --> Call to undefined method CodeIgniter\I18n\Time::lessThanOrEqualTo()
+in APPPATH\Models\Url.php on line 67.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:37:17 --> Call to undefined method CodeIgniter\I18n\Time::addMonth()
+in APPPATH\Models\Url.php on line 79.
+ 1 APPPATH\Controllers\Backend\ManageUrlController.php(120): App\Models\Url->countClicksByCurrentYear('z3m')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Backend\ManageUrlController->getReportByCurrentYear()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\ManageUrlController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Git\\synerry\\public\\index.php')
+INFO - 2023-07-18 23:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:39:10 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:40:11 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:41:16 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:41:45 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+in APPPATH\Models\Url.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:42:08 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+in APPPATH\Models\Url.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:42:30 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+in APPPATH\Models\Url.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:43:06 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+in APPPATH\Models\Url.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:43:31 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+in APPPATH\Models\Url.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-18 23:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-18 23:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-18 23:43:53 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+in APPPATH\Models\Url.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

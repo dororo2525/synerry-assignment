@@ -38,9 +38,12 @@ $routes->post('/register', 'Frontend\AuthController::postRegister');
 
 $routes->group('', ['filter' => 'auth'], static function ($routes) {
     $routes->resource('manage-url' , ['controller' => 'Backend\ManageUrlController']);
+    $routes->get('report/(:segment)', 'Backend\ManageUrlController::report');
+    $routes->post('report/chart/get-report-by-current-year', 'Backend\ManageUrlController::getReportByCurrentYear');
+    $routes->post('report/chart/get-report-by-date-range', 'Backend\ManageUrlController::getReportByDateRange');
     $routes->get('qrcode/(:segment)', 'Backend\ManageUrlController::generateQrCode');
     $routes->post('manage-url/switch-status' , 'Backend\ManageUrlController::switchStatus');
-});
+}); 
 /*
  * --------------------------------------------------------------------
  * Additional Routing

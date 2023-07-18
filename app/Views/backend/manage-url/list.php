@@ -67,9 +67,9 @@
                                 <td><a href="<?= $url['url'] ?>"><?= $url['url'] ?></a></td>
                                 <td><a href="<?= $url['short_url'] ?>"><?= $url['short_url'] ?></a></td>
                                 <td><?= $url['code'] ?></td>
-                                <td><?= $url['clicks'] ?> <div id="qrcode"></div></td>
+                                <td><?= $url['clicks'] ?></td>
                                 <td class="text-center">
-                                    <div class="custom-control custom-switch">
+                                    <div class="custom-control custom-switch custom-switch-md">
                                         <input type="checkbox" class="custom-control-input switch-status" id="customSwitch<?= $url['id'] ?>" data-code="<?= $url['code'] ?>" <?= $url['status'] == 1 ? 'checked' : null ?>>
                                         <label class="custom-control-label" for="customSwitch<?= $url['id'] ?>"></label>
                                     </div>
@@ -83,8 +83,8 @@
                                             <!-- Dropdown menu items -->
                                             <a class="dropdown-item" href="<?= route_to('App\Controllers\Backend\ManageUrlController::edit', $url['code']) ?>">Edit</a>
                                             <a class="dropdown-item btn-delete" data-code="<?= $url['code'] ?>" href="javascript:void(0)">Delete</a>
-                                            <a class="dropdown-item" href="#">Download qr code</a>
-                                            <a class="dropdown-item" href="#">Report</a>
+                                            <a class="dropdown-item btn-save-qr" data-link="<?= $url['short_url'] ?>" data-code="<?= $url['code'] ?>" href="javascript:void(0)">Download qr code</a>
+                                            <a class="dropdown-item" href="<?= base_url('report/'. $url['code']) ?>">Report</a>
                                         </div>
                                     </div>
                                 </td>
@@ -263,6 +263,31 @@
             });
             $(this).blur();
         });
+
+        $('.btn-save-qr').click(function(){
+            var link = $(this).data('link');
+            var code = $(this).data('code');
+            var canvas = document.createElement("canvas");
+            canvas.width = 800;
+            canvas.height = 800;
+
+            var qr = new QRCode( canvas, {
+                text: link,
+                width: 800,
+                height: 800,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+
+            var canvasDraw = qr._oDrawing._elCanvas;
+
+            var dataURL = canvasDraw.toDataURL("image/png");
+            var link = document.createElement('a');
+            link.download = code + '.png';
+            link.href = dataURL;
+            link.click();
+        })
     });
 </script>
 <?= $this->endSection() ?>

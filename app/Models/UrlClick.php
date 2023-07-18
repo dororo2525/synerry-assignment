@@ -46,4 +46,9 @@ class UrlClick extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function url()
+    {
+        return $this->belongsTo('App\Models\Url', 'shorten_url_id', 'id');
+    }
 }
