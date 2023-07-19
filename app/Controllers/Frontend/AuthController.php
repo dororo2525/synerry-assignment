@@ -64,32 +64,33 @@ class AuthController extends BaseController
         $userModel = new User();
         $session = session();
 
-        $this->validate([
+        $rules = [
             'name' => 'required',
             'email' => 'required|valid_email|is_unique[users.email]',
             'password' => 'required|min_length[8]',
             'password_confirmation' => 'required|min_length[8]',
-        ]);
+        ];
 
-        $user = $userModel->where('email', $email)->first();
+        if(!$this->validate($rules)){
+            $session->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->to(base_url('register'))->withInput();
+        }
 
-        if($user){
-            $session->setFlashdata('error', 'Email invalid');
-            return redirect()->to(base_url('/register'));
-        }else{
             if($password == $password_confirmation){
                 $userModel->insert([
                     'name' => $name,
                     'email' => $email,
                     'password' => password_hash($password, PASSWORD_DEFAULT),
+                    'created_at' => date('Y-m-d H:i:s'),
                 ]);
-                $session->setFlashdata('success', 'Registrasi Berhasil');
-                return redirect()->to(base_url('/login'));
+                $session->setFlashdata('success', 'Register success');
+                $user = $userModel->where('email', $email)->first();
+                $session->set('auth', $user);
+                return redirect()->to(base_url('/manage-url'));
             }else{
-                $session->setFlashdata('error', 'Password Tidak Sama');
+                $session->setFlashdata('error', 'Password confirmation invalid');
                 return redirect()->to(base_url('/register'));
             }
-        }
     }
 
     public function logout(){

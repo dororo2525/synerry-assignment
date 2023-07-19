@@ -19,7 +19,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="../../index2.html">Please sign in</a>
+            Please sign in
         </div>
         <!-- /.login-logo -->
         <div class="card">
@@ -61,7 +61,7 @@
 
                 <div class="social-auth-links text-center mb-3">
                     <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-primary">Sign in</a>
+                    <a href="<?= base_url('register') ?>" class="btn btn-block btn-primary">Sign in</a>
                 </div>
             </div>
             <!-- /.login-card-body -->

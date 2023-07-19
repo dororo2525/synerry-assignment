@@ -23,6 +23,7 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
         'auth'          => \App\Filters\AuthFilter::class,
         'is_login'      => \App\Filters\CheckAuth::class,
+        'access_permission' => \App\Filters\AccessPermission::class,
     ];
 
     /**
@@ -62,5 +63,7 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array $filters = [];
+    public array $filters = [
+        'access_permission' => ['before' => ['manage-url/*/edit']],
+    ];
 }

@@ -59,7 +59,7 @@
           <img src="<?= base_url('assets/img/user2-160x160.jpg') ?>" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Nuttapong Binkudsun</a>
+          <a href="#" class="d-block"><?= session()->get('auth')['name'] ?></a>
         </div>
       </div>
 
@@ -81,7 +81,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('manage-url') ?>" class="nav-link">
               <i class="nav-icon fas fa-link"></i>
               <p>
                 Manage URL            
@@ -89,7 +89,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/logout" class="nav-link">
+            <a href="<?= base_url('logout') ?>" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
               <p>
                 Logout            
