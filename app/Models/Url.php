@@ -5,7 +5,6 @@ namespace App\Models;
 use CodeIgniter\Model;
 use App\Models\UrlClick;
 use Carbon\Carbon;
-use CodeIgniter\I18n\Time;
 
 class Url extends Model
 {
@@ -54,20 +53,27 @@ class Url extends Model
 
     public function countClicksByCurrentYear($code)
     {
-        
-        $currentYear = Carbon::now()->year;
-$urlclick = new UrlClick();
-$months = [];
+        $startDate = Carbon::parse('2023-01-01')->startOfYear();
+        return $startDate;
+        $endDate = Carbon::now()->endOfYear();
+        $sDate = '2023-01';
+        $eDate = '2023-12';
+        $year = [];
+        $clickCounts = [];
+        $currentDate = $startDate->copy();
+        return $currentDate;
+        $urls = $this->where('code', $code)->first();
+        $urlclick = new UrlClick();
+            while ($currentDate <= $endDate) {
+                $clickCount = $urlclick->where("DATE_FORMAT(created_at, '%Y-%m-%d') BETWEEN '{$currentDate->startOfMonth()->format("Y")}' AND '{$currentDate->endOfMonth()->format("m")}'")->where('shorten_url_id',$urls['id'])->countAllResults();
 
-        $startDate = Time::parse('2023-01-01');
-        $endDate = Time::parse('2023-12-31');
+                $clickCounts[$currentDate->format('Y-n')] = $clickCount;
 
-        // Loop through each month within the date range
-        while ($startDate->isBefore($endDate)) {
-           $months[] = $startDate;
-            $startDate->modify('+1 month');
-        }
-        return $months;
+                // $currentDate = $currentDate->modify('+1 month');
+                return $currentDate;
+            }
+            $urls['clicks'] = $clickCounts;
+        return $urls;
     }
 
     public function countClicksByMonthRange($startDate, $endDate)
