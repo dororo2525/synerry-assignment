@@ -30,7 +30,7 @@ class ManageUrlController extends BaseController
         // var_dump(base_url() . '/' . $shorten_url);die();
         $data = [
             'url' => $this->request->getPost('url'),
-            'short_url' => base_url() . 'short/' . $shorten_url,
+            'short_url' => base_url() . $shorten_url,
             'code' => $shorten_url,
             'user_id' => $this->request->getPost('user_id') ?? session()->get('auth')['id'],
             'created_at' => date('Y-m-d H:i:s')
@@ -110,6 +110,9 @@ class ManageUrlController extends BaseController
         $code = $this->request->uri->getSegment(2);
         $urls = new Url();
         $url = $urls->where('code', $code)->first();
+        if(!$url || $url['user_id'] != session()->get('auth')['id']){
+            return redirect()->to(base_url('manage-url'))->with('error', 'Url not found');
+        }
         return view('backend/manage-url/report' , compact('url'));
         // var_dump($url->countClicksByMonthRange('2023-05-01' , '2023-07-31')); die();
     }

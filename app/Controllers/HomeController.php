@@ -13,7 +13,7 @@ class HomeController extends BaseController
         helper('url');
         $agent = $this->request->getUserAgent();
         $urls = new Url();
-        $segment = $this->request->uri->getSegment(2);
+        $segment = $this->request->uri->getSegment(1);
         $url = $urls->where('code', $segment)->first();
         if($url && $url['status'] == 1){
             $urlClick = new UrlClick();

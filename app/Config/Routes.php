@@ -44,6 +44,8 @@ $routes->group('', ['filter' => 'auth'], static function ($routes) {
     $routes->get('qrcode/(:segment)', 'Backend\ManageUrlController::generateQrCode');
     $routes->post('manage-url/switch-status' , 'Backend\ManageUrlController::switchStatus');
 }); 
+
+$routes->get('/(:any)', 'HomeController::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
