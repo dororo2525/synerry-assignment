@@ -5,6 +5,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 use App\Models\UrlClick;
 use Carbon\Carbon;
+use CodeIgniter\I18n\Time;
 
 class Url extends Model
 {
@@ -53,27 +54,26 @@ class Url extends Model
 
     public function countClicksByCurrentYear($code)
     {
-        $startDate = Carbon::parse('2023-01-01')->startOfYear();
-        return $startDate;
-        $endDate = Carbon::now()->endOfYear();
-        $sDate = '2023-01';
-        $eDate = '2023-12';
-        $year = [];
-        $clickCounts = [];
-        $currentDate = $startDate->copy();
-        return $currentDate;
-        $urls = $this->where('code', $code)->first();
-        $urlclick = new UrlClick();
-            while ($currentDate <= $endDate) {
-                $clickCount = $urlclick->where("DATE_FORMAT(created_at, '%Y-%m-%d') BETWEEN '{$currentDate->startOfMonth()->format("Y")}' AND '{$currentDate->endOfMonth()->format("m")}'")->where('shorten_url_id',$urls['id'])->countAllResults();
+        $urls = new Url();
+        $urlclicks = new UrlClick();
+        $url = $urls->where('code', $code)->first();
+        $columns = ['platform', 'browser', 'device'];
+        $urlclick = $this->getCountByColumns($columns , $url['id']);
+        $currentYear = date('Y');
+        $currentClicks = [];
 
-                $clickCounts[$currentDate->format('Y-n')] = $clickCount;
-
-                // $currentDate = $currentDate->modify('+1 month');
-                return $currentDate;
-            }
-            $urls['clicks'] = $clickCounts;
-        return $urls;
+        for ($month = 1; $month <= 12; $month++) {
+            $startDate = Carbon::createFromDate($currentYear, $month, 1)->startOfMonth();
+            $endDate = Carbon::createFromDate($currentYear, $month, 1)->endOfMonth();
+            $clickCount = $urlclicks->where('shorten_url_id', $url['id'])->where("DATE_FORMAT(created_at, '%Y-%m-%d') BETWEEN  '{$startDate->toDateString()}'  AND   '{$endDate->toDateString()}'")->countAllResults();
+            $currentClicks[$month-1] = [
+                'clicks' => $clickCount
+            ];
+        }
+        return [
+            'months' => $currentClicks,
+            'urlclicks' => $urlclick
+        ];
     }
 
     public function countClicksByMonthRange($startDate, $endDate)
@@ -84,25 +84,52 @@ class Url extends Model
         $currentDate = $startDate->copy();
         $urls = $this->where('user_id', session()->get('auth')['id'])->findAll();
         $urlclick = new UrlClick();
-        foreach ($urls as $key => $url) {
-            while ($currentDate <= $endDate) {
-                $clickCount = $urlclick->where('created_at BETWEEN "' . $currentDate->year . '" AND "' . $currentDate->month)->where('shorten_url_id',$urls['id'])->count();
-
-                $clickCounts[$currentDate->format('Y-n')] = $clickCount;
-
-                $currentDate->addMonth();
-            }
-            $urls[$key]['clicks'] = $clickCounts;
-            $clickCounts = [];
+        $startMonth = 1;
+        $startYear = 2022;
+        $endMonth = 12;
+        $endYear = 2022;
+        
+        // $startDate = Carbon::createFromDate($startYear, $startMonth, 1)->startOfMonth();
+        // $endDate = Carbon::createFromDate($endYear, $endMonth, 1)->endOfMonth();
+        
+        $dates = [];
+        
+        $currentDate = $startDate->copy();
+        
+        while ($currentDate->lte($endDate)) {
+            $start = $currentDate->copy()->startOfMonth();
+            $end = $currentDate->copy()->endOfMonth();
+        
+            $dates[$currentDate->format('Y-m')] = [
+                'start' => $start->toDateString(),
+                'end' => $end->toDateString(),
+            ];
+        
+            $currentDate->addMonth();
         }
         return $urls;
     }
 
-    public function user(){
-        return $this->belongsTo('App\Model\User' , 'user_id' , 'id');
+    public function getCountByColumns($columns , $id)
+    {
+        $urlclick = new UrlClick();
+        $result = [];
+        $mergedRow = [];
+        foreach ($columns as $column) {
+                $result[$column] = $urlclick->select($column . ', COUNT(*) as count_' . $column)->where('shorten_url_id' , $id)->groupBy($column)->findAll();
+        }
+
+        return $result;
+
     }
 
-    public function clicks(){
-        return $this->hasMany('App\Model\UrlClick' , 'shorten_url_id' , 'id');
+    public function user()
+    {
+        return $this->belongsTo('App\Model\User', 'user_id', 'id');
+    }
+
+    public function clicks()
+    {
+        return $this->hasMany('App\Model\UrlClick', 'shorten_url_id', 'id');
     }
 }

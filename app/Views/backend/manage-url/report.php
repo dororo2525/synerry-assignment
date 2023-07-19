@@ -30,23 +30,23 @@
         <div class="card">
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-lg-5">
-                    <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Start Date</span>
-                  </div>
-                  <input type="date" class="form-control" id="startDate" required>
-                </div>
+                    <div class="col-lg-5 mt-2 mb-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Start Date</span>
+                            </div>
+                            <input type="date" class="form-control" id="startDate" required>
+                        </div>
                     </div>
-                    <div class="col-lg-5">
-                    <div class="input-group">
-                    <div class="input-group-prepend">
-                    <span class="input-group-text">End Date</span>
-                  </div>
+                    <div class="col-lg-5 mt-2 mb-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">End Date</span>
+                            </div>
                             <input type="date" class="form-control" id="endDate" required>
+                        </div>
                     </div>
-                    </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 mt-2 mb-2">
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary btn-block" id="btn-search" type="button"><i class="fas fa-search"></i></button>
                         </div>
@@ -59,7 +59,7 @@
         <!-- BAR CHART -->
         <div class="card card-success">
             <div class="card-header">
-                <h3 class="card-title">Bar Chart</h3>
+                <h3 class="card-title">Click Current year</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -75,15 +75,18 @@
                     <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
                 </div>
             </div>
+            <div class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
+                <div class="text-bold pt-2">Loading...</div>
+            </div>
             <!-- /.card-body -->
         </div>
         <!-- /.card -->
     </div>
-    <div class="col-md-6">
-        <!-- AREA CHART -->
+    <div class="col-md-4">
+        <!-- PIE CHART -->
         <div class="card card-primary">
             <div class="card-header">
-                <h3 class="card-title">Area Chart</h3>
+                <h3 class="card-title">Platform</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -95,71 +98,19 @@
                 </div>
             </div>
             <div class="card-body">
-                <div class="chart">
-                    <canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                </div>
+                <canvas id="platformChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
             </div>
             <!-- /.card-body -->
             <div class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
                 <div class="text-bold pt-2">Loading...</div>
             </div>
-            <script>
-                setInterval(function() {
-                    $('.overlay').fadeOut()
-                }, 2000)
-            </script>
         </div>
         <!-- /.card -->
-
-        <!-- DONUT CHART -->
-        <div class="card card-danger">
-            <div class="card-header">
-                <h3 class="card-title">Donut Chart</h3>
-
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                        <i class="fas fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="card-body">
-                <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-            </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-
-        <!-- PIE CHART -->
-        <div class="card card-danger">
-            <div class="card-header">
-                <h3 class="card-title">Pie Chart</h3>
-
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                        <i class="fas fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="card-body">
-                <canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-            </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-
     </div>
-    <!-- /.col (LEFT) -->
-    <div class="col-md-6">
-        <!-- LINE CHART -->
-        <div class="card card-info">
+    <div class="col-md-4">
+    <div class="card card-info">
             <div class="card-header">
-                <h3 class="card-title">Line Chart</h3>
+                <h3 class="card-title">Browser</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -171,39 +122,39 @@
                 </div>
             </div>
             <div class="card-body">
-                <div class="chart">
-                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                </div>
+                <canvas id="browserChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
             </div>
             <!-- /.card-body -->
+            <div class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
+                <div class="text-bold pt-2">Loading...</div>
+            </div>
         </div>
         <!-- /.card -->
-
-        <!-- STACKED BAR CHART -->
-        <div class="card card-success">
-            <div class="card-header">
-                <h3 class="card-title">Stacked Bar Chart</h3>
-
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                        <i class="fas fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="chart">
-                    <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                </div>
-            </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-
     </div>
-    <!-- /.col (RIGHT) -->
+    <div class="col-md-4">
+    <div class="card card-secondary">
+            <div class="card-header">
+                <h3 class="card-title">Device</h3>
+
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <canvas id="deviceChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+            </div>
+            <!-- /.card-body -->
+            <div class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i>
+                <div class="text-bold pt-2">Loading...</div>
+            </div>
+        </div>
+        <!-- /.card -->
+    </div>
 </div>
 <!-- /.row -->
 <?= $this->endSection(); ?>
@@ -213,203 +164,180 @@
 <script>
     $(function() {
         var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        var emptyData = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         $.ajax({
             type: "POST",
             url: "<?= route_to('App\Controllers\Backend\ManageUrlController::getReportByCurrentYear') ?>",
             data: {
-                code : '<?= $url['code'] ?>'
+                code: '<?= $url['code'] ?>'
             },
             dataType: "json",
-            success: function (response) {
+            success: function(response) {
                 console.log(response);
-            }
-        });
+                var currentMonth = []
+                var currentData = []
+                var labelPlatform = []
+                var labelBrowser = []
+                var labelDevice = []
+                var deviceData = []
+                var platformData = []
+                var browserData = []
 
+                $.each(response.data.months, function(index, value) {
+                    currentMonth.push(month[index]);
+                    currentData.push(parseInt(value.clicks));
+                });
 
+                $.each(response.data.urlclicks, function(index, value) {
 
-
-
-
-
-
-        /* ChartJS
-         * -------
-         * Here we will create a few charts using ChartJS
-         */
-
-        //--------------
-        //- AREA CHART -
-        //--------------
-
-        // Get context with jQuery - using jQuery's .get() method.
-        var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
-
-        var areaChartData = {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [{
-                    label: 'Digital Goods',
-                    backgroundColor: 'rgba(60,141,188,0.9)',
-                    borderColor: 'rgba(60,141,188,0.8)',
-                    pointRadius: false,
-                    pointColor: '#3b8bba',
-                    pointStrokeColor: 'rgba(60,141,188,1)',
-                    pointHighlightFill: '#fff',
-                    pointHighlightStroke: 'rgba(60,141,188,1)',
-                    data: [28, 48, 40, 19, 86, 27, 90]
-                },
-                {
-                    label: 'Electronics',
-                    backgroundColor: 'rgba(210, 214, 222, 1)',
-                    borderColor: 'rgba(210, 214, 222, 1)',
-                    pointRadius: false,
-                    pointColor: 'rgba(210, 214, 222, 1)',
-                    pointStrokeColor: '#c1c7d1',
-                    pointHighlightFill: '#fff',
-                    pointHighlightStroke: 'rgba(220,220,220,1)',
-                    data: [65, 59, 80, 81, 56, 55, 40]
-                },
-            ]
-        }
-
-        var areaChartOptions = {
-            maintainAspectRatio: false,
-            responsive: true,
-            legend: {
-                display: false
-            },
-            scales: {
-                xAxes: [{
-                    gridLines: {
-                        display: false,
+                    if (index == 'platform') {
+                        $.each(value, function(k, v) {
+                            labelPlatform.push(v.platform);
+                            platformData.push(v.count_platform);
+                        });
+                    } else if (index == 'browser') {
+                        $.each(value, function(k, v) {
+                            labelBrowser.push(v.browser);
+                            browserData.push(v.count_browser);
+                        });
+                    } else if (index == 'device') {
+                        $.each(value, function(k, v) {
+                            labelDevice.push(v.device);
+                            deviceData.push(v.count_device);
+                        });
                     }
-                }],
-                yAxes: [{
-                    gridLines: {
-                        display: false,
-                    }
-                }]
-            }
-        }
+                });
 
-        // This will get the first returned node in the jQuery collection.
-        new Chart(areaChartCanvas, {
-            type: 'line',
-            data: areaChartData,
-            options: areaChartOptions
-        })
+                console.log(labelPlatform, platformData);
 
-        //-------------
-        //- LINE CHART -
-        //--------------
-        var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
-        var lineChartOptions = $.extend(true, {}, areaChartOptions)
-        var lineChartData = $.extend(true, {}, areaChartData)
-        lineChartData.datasets[0].fill = false;
-        lineChartData.datasets[1].fill = false;
-        lineChartOptions.datasetFill = false
+                var areaChartData = {
+                    labels: currentMonth,
+                    datasets: [{
+                        label: 'Clicks',
+                        backgroundColor: 'rgba(60,141,188,0.9)',
+                        borderColor: 'rgba(60,141,188,0.8)',
+                        pointRadius: false,
+                        pointColor: '#3b8bba',
+                        pointStrokeColor: 'rgba(60,141,188,1)',
+                        pointHighlightFill: '#fff',
+                        pointHighlightStroke: 'rgba(60,141,188,1)',
+                        data: currentData
+                    }, ]
+                }
 
-        var lineChart = new Chart(lineChartCanvas, {
-            type: 'line',
-            data: lineChartData,
-            options: lineChartOptions
-        })
+                var platform = {
+                    labels: labelPlatform,
+                    datasets: [{
+                        data: platformData,
+                        backgroundColor: generateColorArray(platformData.length),
+                    }]
+                }
 
-        //-------------
-        //- DONUT CHART -
-        //-------------
-        // Get context with jQuery - using jQuery's .get() method.
-        var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
-        var donutData = {
-            labels: [
-                'Chrome',
-                'IE',
-                'FireFox',
-                'Safari',
-                'Opera',
-                'Navigator',
-            ],
-            datasets: [{
-                data: [700, 500, 400, 600, 300, 100],
-                backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
-            }]
-        }
-        var donutOptions = {
-            maintainAspectRatio: false,
-            responsive: true,
-        }
-        //Create pie or douhnut chart
-        // You can switch between pie and douhnut using the method below.
-        new Chart(donutChartCanvas, {
-            type: 'doughnut',
-            data: donutData,
-            options: donutOptions
-        })
+                var device = {
+                    labels: labelDevice,
+                    datasets: [{
+                        data: deviceData,
+                        backgroundColor: generateColorArray(deviceData.length),
+                    }]
+                }
 
-        //-------------
+                var browser = {
+                    labels: labelBrowser,
+                    datasets: [{
+                        data: browserData,
+                        backgroundColor: generateColorArray(browserData.length),
+                    }]
+                }
+
+                //-------------
+                //- BAR CHART -
+                //-------------
+                var barChartCanvas = $('#barChart').get(0).getContext('2d')
+                var barChartData = $.extend(true, {}, areaChartData)
+                var temp0 = areaChartData.datasets[0]
+                barChartData.datasets[0] = temp0
+
+                var barChartOptions = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    datasetFill: false
+                }
+
+                new Chart(barChartCanvas, {
+                    type: 'bar',
+                    data: barChartData,
+                    options: barChartOptions
+                })
+
+                 //-------------
         //- PIE CHART -
         //-------------
         // Get context with jQuery - using jQuery's .get() method.
-        var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
-        var pieData = donutData;
+        var platformChartCanvas = $('#platformChart').get(0).getContext('2d')
+        var pieData = platform;
         var pieOptions = {
             maintainAspectRatio: false,
             responsive: true,
         }
         //Create pie or douhnut chart
         // You can switch between pie and douhnut using the method below.
-        new Chart(pieChartCanvas, {
+        new Chart(platformChartCanvas, {
             type: 'pie',
             data: pieData,
             options: pieOptions
         })
 
         //-------------
-        //- BAR CHART -
+        //- PIE CHART -
         //-------------
-        var barChartCanvas = $('#barChart').get(0).getContext('2d')
-        var barChartData = $.extend(true, {}, areaChartData)
-        var temp0 = areaChartData.datasets[0]
-        var temp1 = areaChartData.datasets[1]
-        barChartData.datasets[0] = temp1
-        barChartData.datasets[1] = temp0
-
-        var barChartOptions = {
-            responsive: true,
+        // Get context with jQuery - using jQuery's .get() method.
+        var deviceChartCanvas = $('#deviceChart').get(0).getContext('2d')
+        var pieData = device;
+        var pieOptions = {
             maintainAspectRatio: false,
-            datasetFill: false
-        }
-
-        new Chart(barChartCanvas, {
-            type: 'bar',
-            data: barChartData,
-            options: barChartOptions
-        })
-
-        //---------------------
-        //- STACKED BAR CHART -
-        //---------------------
-        var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
-        var stackedBarChartData = $.extend(true, {}, barChartData)
-
-        var stackedBarChartOptions = {
             responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                xAxes: [{
-                    stacked: true,
-                }],
-                yAxes: [{
-                    stacked: true
-                }]
             }
-        }
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            new Chart(deviceChartCanvas, {
+                type: 'pie',
+                data: pieData,
+                options: pieOptions
+            })
 
-        new Chart(stackedBarChartCanvas, {
-            type: 'bar',
-            data: stackedBarChartData,
-            options: stackedBarChartOptions
-        })
+            //-------------
+            //- PIE CHART -
+            //-------------
+            // Get context with jQuery - using jQuery's .get() method.
+            var browserChartCanvas = $('#browserChart').get(0).getContext('2d')
+            var pieData = browser;
+            var pieOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+            }
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            new Chart(browserChartCanvas, {
+                type: 'pie',
+                data: pieData,
+                options: pieOptions
+            })
+
+            $('.overlay').fadeOut();
+        }
+        });
+
+        function generateColorArray(length) {
+            var colorArray = [];
+            var hueStep = 360 / length;
+
+            for (var i = 0; i < length; i++) {
+                var hue = i * hueStep;
+                var color = 'hsl(' + hue + ', 70%, 50%)';
+                colorArray.push(color);
+            }
+
+            return colorArray;
+        }
     })
 </script>
 <?= $this->endSection(); ?>
