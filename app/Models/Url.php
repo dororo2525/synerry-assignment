@@ -58,7 +58,7 @@ class Url extends Model
         $urlclicks = new UrlClick();
         $url = $urls->where('code', $code)->first();
         $columns = ['platform', 'browser', 'device'];
-        $urlclick = $this->getCountByColumns($columns , $url['id']);
+        $urlclick = $this->getCountByColumns($columns , $url['id'] , Carbon::now()->startOfYear() , Carbon::now()->endOfYear());
         $currentYear = date('Y');
         $currentClicks = [];
 
@@ -76,47 +76,46 @@ class Url extends Model
         ];
     }
 
-    public function countClicksByMonthRange($startDate, $endDate)
+    public function countClicksByMonthRange($code ,$startDate, $endDate)
     {
-        $startDate = Carbon::parse($startDate)->startOfMonth();
-        $endDate = Carbon::parse($endDate)->endOfMonth();
-        $clickCounts = [];
-        $currentDate = $startDate->copy();
-        $urls = $this->where('user_id', session()->get('auth')['id'])->findAll();
-        $urlclick = new UrlClick();
-        $startMonth = 1;
-        $startYear = 2022;
-        $endMonth = 12;
-        $endYear = 2022;
-        
-        // $startDate = Carbon::createFromDate($startYear, $startMonth, 1)->startOfMonth();
-        // $endDate = Carbon::createFromDate($endYear, $endMonth, 1)->endOfMonth();
-        
-        $dates = [];
-        
-        $currentDate = $startDate->copy();
-        
-        while ($currentDate->lte($endDate)) {
-            $start = $currentDate->copy()->startOfMonth();
-            $end = $currentDate->copy()->endOfMonth();
-        
-            $dates[$currentDate->format('Y-m')] = [
-                'start' => $start->toDateString(),
-                'end' => $end->toDateString(),
+        $startDate = Carbon::createFromDate($startDate);
+        $endDate = Carbon::createFromDate($endDate);
+        // return $startDate . ' ' . $endDate;
+        $urls = new Url();
+        $urlclicks = new UrlClick();
+        $url = $urls->where('code', $code)->first();
+        $columns = ['platform', 'browser', 'device'];
+        $urlclick = $this->getCountByColumns($columns , $url['id'] , $startDate , $endDate);
+        $currentClicks = [];
+        $diffInMonths = $startDate->diffInMonths($endDate);
+        $i = 0;
+        // return $diffInMonths;
+        while ($startDate->lte($endDate)) {
+            // return $day;
+            $end_date = $i == $diffInMonths ? $endDate->toDateString() : $startDate->endOfMonth()->toDateString();
+            $clickCount = $urlclicks->where('shorten_url_id', $url['id'])->where("DATE_FORMAT(created_at, '%Y-%m-%d') BETWEEN  '{$startDate->toDateString()}'  AND   '{$end_date}'")->countAllResults();
+            $currentClicks[$startDate->month -1] = [
+                'clicks' => $clickCount
             ];
-        
-            $currentDate->addMonth();
+            $startDate->addMonth()->startOfMonth();
+            $i++;
         }
-        return $urls;
+        return [
+            'months' => $currentClicks,
+            'urlclicks' => $urlclick
+        ];
     }
 
-    public function getCountByColumns($columns , $id)
+    public function getCountByColumns($columns , $id , $startDate , $endDate)
     {
+        $startDate = $startDate->format('Y-m-d');
+        $endDate = $endDate->format('Y-m-d');
         $urlclick = new UrlClick();
         $result = [];
-        $mergedRow = [];
         foreach ($columns as $column) {
-                $result[$column] = $urlclick->select($column . ', COUNT(*) as count_' . $column)->where('shorten_url_id' , $id)->groupBy($column)->findAll();
+                $result[$column] = $urlclick->select($column . ', COUNT(*) as count_' . $column)->where('shorten_url_id' , $id)
+                ->where("DATE_FORMAT(created_at, '%Y-%m-%d') BETWEEN  '{$startDate}'  AND   '{$endDate}'")
+                ->groupBy($column)->findAll();
         }
 
         return $result;

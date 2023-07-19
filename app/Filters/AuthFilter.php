@@ -26,7 +26,7 @@ class AuthFilter implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         if(!session()->get('auth')){
-            session()->setFlashdata('target_url', $request->uri->getSegment(1));
+            session()->setFlashdata('target_url', uri_string());
             return redirect()->to(base_url('/'));
         }
     }

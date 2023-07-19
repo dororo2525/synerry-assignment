@@ -1,7 +1,7 @@
 <?= $this->extend('layouts/app'); ?>
 
 <?= $this->section('css'); ?>
-
+<link rel="stylesheet" href="<?= base_url('assets/plugins/sweetalert2/sweetalert2.min.css') ?>">
 <?= $this->endSection(); ?>
 
 <?= $this->section('content-header') ?>
@@ -59,7 +59,7 @@
         <!-- BAR CHART -->
         <div class="card card-success">
             <div class="card-header">
-                <h3 class="card-title">Click Current year</h3>
+                <h3 class="card-title click-title">Click Current year</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -161,9 +161,15 @@
 
 <?= $this->section('script'); ?>
 <script src="<?= base_url('assets/plugins/chart.js/Chart.min.js') ?>"></script>
+<script src="<?= base_url('assets/plugins/sweetalert2/sweetalert2.min.js') ?>"></script>
 <script>
     $(function() {
         var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var clickChart;
+        var platformChart;
+        var deviceChart;
+        var browserChart;
+
         $.ajax({
             type: "POST",
             url: "<?= route_to('App\Controllers\Backend\ManageUrlController::getReportByCurrentYear') ?>",
@@ -206,8 +212,6 @@
                         });
                     }
                 });
-
-                console.log(labelPlatform, platformData);
 
                 var areaChartData = {
                     labels: currentMonth,
@@ -262,7 +266,7 @@
                     datasetFill: false
                 }
 
-                new Chart(barChartCanvas, {
+              clickChart =  new Chart(barChartCanvas, {
                     type: 'bar',
                     data: barChartData,
                     options: barChartOptions
@@ -280,7 +284,7 @@
         }
         //Create pie or douhnut chart
         // You can switch between pie and douhnut using the method below.
-        new Chart(platformChartCanvas, {
+        platformChart = new Chart(platformChartCanvas, {
             type: 'pie',
             data: pieData,
             options: pieOptions
@@ -298,7 +302,7 @@
             }
             //Create pie or douhnut chart
             // You can switch between pie and douhnut using the method below.
-            new Chart(deviceChartCanvas, {
+         deviceChart =  new Chart(deviceChartCanvas, {
                 type: 'pie',
                 data: pieData,
                 options: pieOptions
@@ -316,7 +320,7 @@
             }
             //Create pie or douhnut chart
             // You can switch between pie and douhnut using the method below.
-            new Chart(browserChartCanvas, {
+           browserChart = new Chart(browserChartCanvas, {
                 type: 'pie',
                 data: pieData,
                 options: pieOptions
@@ -324,6 +328,92 @@
 
             $('.overlay').fadeOut();
         }
+        });
+
+        $('#btn-search').click(function() {
+            var startDate = $('#startDate').val();
+            var endDate = $('#endDate').val();
+            if (startDate == '' || endDate == '') {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Please select start date and end date',
+                })
+            } else {
+                $('.overlay').fadeIn();
+                $.ajax({
+                    type: "POST",
+                    url: "<?= route_to('App\Controllers\Backend\ManageUrlController::getReportByDateRange') ?>",
+                    data: {
+                        code: '<?= $url['code'] ?>',
+                        startDate: startDate,
+                        endDate: endDate
+                    },
+                    dataType: "json",
+                    success: function(response) {
+                     console.log(response);
+                var currentMonth = []
+                var currentData = []
+                var labelPlatform = []
+                var labelBrowser = []
+                var labelDevice = []
+                var deviceData = []
+                var platformData = []
+                var browserData = []
+
+                $.each(response.data.months, function(index, value) {
+                    currentMonth.push(month[index]);
+                    currentData.push(parseInt(value.clicks));
+                });
+
+                $.each(response.data.urlclicks, function(index, value) {
+
+                    if (index == 'platform') {
+                        $.each(value, function(k, v) {
+                            labelPlatform.push(v.platform);
+                            platformData.push(v.count_platform);
+                        });
+                    } else if (index == 'browser') {
+                        $.each(value, function(k, v) {
+                            labelBrowser.push(v.browser);
+                            browserData.push(v.count_browser);
+                        });
+                    } else if (index == 'device') {
+                        $.each(value, function(k, v) {
+                            labelDevice.push(v.device);
+                            deviceData.push(v.count_device);
+                        });
+                    }
+                });
+
+                
+
+                //-------------
+                //- BAR CHART -
+                //-------------
+                clickChart.data.labels = currentMonth;
+                clickChart.data.datasets[0].data = currentData;
+                clickChart.update();
+
+                 //-------------
+
+                platformChart.data.labels = labelPlatform;
+                platformChart.data.datasets[0].data = platformData;
+                platformChart.update();
+
+                deviceChart.data.labels = labelDevice;
+                deviceChart.data.datasets[0].data = deviceData;
+                deviceChart.update();
+
+                browserChart.data.labels = labelBrowser;
+                browserChart.data.datasets[0].data = browserData;
+                browserChart.update();
+
+            $('.click-title').text('Click from ' + startDate + ' to ' + endDate);
+            $('.overlay').fadeOut();
+                    }
+                });
+            }
         });
 
         function generateColorArray(length) {

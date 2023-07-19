@@ -122,10 +122,11 @@ class ManageUrlController extends BaseController
     }
 
     public function getReportByDateRange(){
+        $code = $this->request->getPost('code');
         $startDate = $this->request->getPost('startDate');
         $endDate = $this->request->getPost('endDate');
         $urls = new Url();
-        $url = $urls->countClicksByMonthRange($startDate , $endDate);
+        $url = $urls->countClicksByMonthRange($code,$startDate , $endDate);
         return response()->setJSON(['status' => true, 'data' => $url]);
     }
 
